@@ -9,9 +9,6 @@ function checkNumber() {
     numberGuesses = numberGuesses - 1
     guesses.textContent = numberGuesses
     
-    if(numberGuesses <= 0) {
-        message.textContent='You lose!'
-    }
         
     var userGuess = parseInt(guess.value)
 
@@ -25,7 +22,7 @@ function checkNumber() {
         message.textContent='Guess is too low.'
     }
       if(numberGuesses <= 0) {
-      message.textContent='You lose! Reload the page to play again.'
+      message.textContent='You lose! Reload the page to play again. The correct number was ' + number + '.'
   
       
     }
